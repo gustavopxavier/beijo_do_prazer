@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "240927715996",
+    "firebase_url": "https://lojaflutterudemy-d6a31.firebaseio.com",
+    "project_id": "lojaflutterudemy-d6a31",
+    "storage_bucket": "lojaflutterudemy-d6a31.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:240927715996:android:c83c7f9581aa7234cf7359",
+        "android_client_info": {
+          "package_name": "br.com.olhovivotecnologia.lojavirtualudemy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "240927715996-i5t2o71kgi5nb8a1sap8rg2dd2t6imr5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhg3ByCZsRZw5O5BQd9FR4eYfdtQtAUkE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "240927715996-i5t2o71kgi5nb8a1sap8rg2dd2t6imr5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

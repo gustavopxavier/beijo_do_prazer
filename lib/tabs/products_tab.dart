@@ -2,11 +2,12 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:lojavirtualudemy/tiles/category_tiles.dart';
 
+// Lista das categorias dos produtos
 class ProductsTab extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return FutureBuilder<QuerySnapshot>(
-      future: Firestore.instance.collection("produtos").getDocuments(),
+      future: Firestore.instance.collection("home").getDocuments(),
       builder: (context, snapshot) {
         if (!snapshot.hasData) {
           return Center(

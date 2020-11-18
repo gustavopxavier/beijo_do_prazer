@@ -10,12 +10,14 @@ class ListTest extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final colorScheme = Theme.of(context).colorScheme;
     return Scaffold(
       body: DefaultTabController(
         length: 2,
         child: Scaffold(
           appBar: AppBar(
             title: Text("Produtos em Destaque"),
+            backgroundColor: colorScheme.primaryVariant,
             centerTitle: true,
             bottom: TabBar(
               indicatorColor: Colors.white,
@@ -57,6 +59,7 @@ class ListTest extends StatelessWidget {
                         //     ProductData.fromDocument(
                         //         snapshot.data.documents[index]));
                         return Scaffold(
+                          // backgroundColor: colorScheme.primary,
                           body: GridTile(
                             child: Card(
                               child: Image.network(

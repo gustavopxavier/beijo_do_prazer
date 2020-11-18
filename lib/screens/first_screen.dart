@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:lojavirtualudemy/screens/contact_screen.dart';
+import 'package:lojavirtualudemy/screens/home_screen.dart';
 import 'package:lojavirtualudemy/screens/list_test.dart';
+import 'package:lojavirtualudemy/screens/news_screen.dart';
 
 // void main() => runApp(MyApp());
 
@@ -23,12 +26,13 @@ class _MyHomePageState extends State<MyHomePage> {
   int _currentIndex = 0;
 
   final tabs = [
-    Center(child: Text('Início', style: TextStyle(fontSize: 30))),
+    // Center(child: Text('Início', style: TextStyle(fontSize: 30))),
     // TestGridview(),
     // ListAllProducts(),
+    HomeScreen(),
     ListTest(),
-    Center(child: Text('Novidades', style: TextStyle(fontSize: 30))),
-    Center(child: Text('Contatos', style: TextStyle(fontSize: 30))),
+    NewsScreen(),
+    ContactScreen(),
   ];
 
   Widget build(BuildContext context) {
@@ -40,9 +44,10 @@ class _MyHomePageState extends State<MyHomePage> {
         type: BottomNavigationBarType.fixed,
         currentIndex: _currentIndex,
         // backgroundColor: Colors.blueGrey,
-        backgroundColor: colorScheme.surface,
-        selectedItemColor: colorScheme.onSurface,
-        unselectedItemColor: colorScheme.onSurface.withOpacity(.60),
+        backgroundColor: colorScheme.primary,
+        elevation: 0.0,
+        selectedItemColor: colorScheme.surface,
+        unselectedItemColor: colorScheme.surface.withOpacity(.60),
         selectedLabelStyle: textTheme.caption,
         unselectedLabelStyle: textTheme.caption,
         onTap: (value) {
@@ -103,12 +108,12 @@ TextTheme _buildShrineTextTheme(TextTheme base) {
 }
 
 const ColorScheme _shrineColorScheme = ColorScheme(
-  primary: shrinePink100,
-  primaryVariant: shrineBrown900,
+  primary: shrinePinkPrimary900,
+  primaryVariant: shrinePinkPrimaryDark900,
   secondary: shrinePink50,
   secondaryVariant: shrineBrown900,
   surface: shrineSurfaceWhite,
-  background: shrineBackgroundWhite,
+  background: shrinePinkPrimaryLight900,
   error: shrineErrorRed,
   onPrimary: shrineBrown900,
   onSecondary: shrineBrown900,
@@ -122,6 +127,10 @@ const Color shrinePink50 = Color(0xFFFEEAE6);
 const Color shrinePink100 = Color(0xFFFEDBD0);
 const Color shrinePink300 = Color(0xFFFBB8AC);
 const Color shrinePink400 = Color(0xFFEAA4A4);
+const Color shrinePink900 = Color(0xFF880E4F);
+const Color shrinePinkPrimary900 = Color(0xFF880E4F);
+const Color shrinePinkPrimaryLight900 = Color(0xFFBC477B);
+const Color shrinePinkPrimaryDark900 = Color(0xFF560027);
 
 const Color shrineBrown900 = Color(0xFF442B2D);
 const Color shrineBrown600 = Color(0xFF7D4F52);

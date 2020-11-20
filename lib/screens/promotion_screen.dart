@@ -1,7 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 
-class ListTest extends StatelessWidget {
+class PromotionScreen extends StatelessWidget {
   // final DocumentSnapshot snapshot;
 
   // const ListAllProducts({Key key, this.snapshot}) : super(key: key);
@@ -16,7 +16,7 @@ class ListTest extends StatelessWidget {
         length: 2,
         child: Scaffold(
           appBar: AppBar(
-            title: Text("Produtos em Destaque"),
+            title: Text("Produtos em Promoção"),
             backgroundColor: colorScheme.primaryVariant,
             centerTitle: true,
             bottom: TabBar(
@@ -32,7 +32,7 @@ class ListTest extends StatelessWidget {
             ),
           ),
           body: StreamBuilder(
-            stream: Firestore.instance.collection("beijodoprazer").snapshots(),
+            stream: Firestore.instance.collection("promotion").snapshots(),
             builder: (_, snapshot) {
               if (!snapshot.hasData)
                 return Center(

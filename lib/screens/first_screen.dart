@@ -3,6 +3,7 @@ import 'package:lojavirtualudemy/screens/contact_screen.dart';
 import 'package:lojavirtualudemy/screens/home_screen.dart';
 import 'package:lojavirtualudemy/screens/list_test.dart';
 import 'package:lojavirtualudemy/screens/news_screen.dart';
+import 'package:lojavirtualudemy/screens/promotion_screen.dart';
 
 // void main() => runApp(MyApp());
 
@@ -31,7 +32,8 @@ class _MyHomePageState extends State<MyHomePage> {
     // ListAllProducts(),
     HomeScreen(),
     ListTest(),
-    NewsScreen(),
+    // NewsScreen(),
+    PromotionScreen(),
     ContactScreen(),
   ];
 
@@ -65,7 +67,7 @@ class _MyHomePageState extends State<MyHomePage> {
             icon: Icon(Icons.shopping_basket),
           ),
           BottomNavigationBarItem(
-            label: 'Novidades',
+            label: 'Promoções',
             icon: Icon(Icons.fiber_new_sharp),
           ),
           BottomNavigationBarItem(

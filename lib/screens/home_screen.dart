@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+
 // Uncomment lines 7 and 10 to view the visual layout at runtime.
 // import 'package:flutter/rendering.dart' show debugPaintSizeEnabled;
-
+// https://github.com/flutter/website/blob/master/examples/layout/lakes/step6/lib/main.dart
 void main() {
   // debugPaintSizeEnabled = true;
   runApp(HomeScreen());

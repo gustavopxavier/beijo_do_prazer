@@ -88,11 +88,20 @@ class ContactScreen extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
+                // ------------------------------WHATSAPP-----------------------------
+
                 Stack(
                   alignment: Alignment.bottomCenter,
                   children: [
                     RaisedButton(
-                      onPressed: _launchZAP(),
+                      padding: const EdgeInsets.all(8.0),
+                      elevation: 0.0,
+                      disabledElevation: 0.0,
+                      focusElevation: 0.0,
+                      highlightElevation: 0.0,
+                      hoverElevation: 0.0,
+                      color: colorScheme.primary,
+                      onPressed: _launchZAP,
                       child: CircleAvatar(
                         backgroundImage: NetworkImage(
                             'https://img1.pnghut.com/14/3/7/xArSPfqe0E/logo-internet-email-icon-design-whatsapp.jpg'),
@@ -100,20 +109,30 @@ class ContactScreen extends StatelessWidget {
                       ),
                     ),
                     Container(
+                      width: MediaQuery.of(context).size.width * .20,
                       decoration: BoxDecoration(
-                        color: Colors.black45,
-                      ),
-                      child: Text(
-                        'Whatsapp',
-                        style: TextStyle(
-                          fontSize: 20,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.white,
-                        ),
+                          color: Colors.black87,
+                          borderRadius: BorderRadius.all(
+                            Radius.circular(40.0),
+                          )),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Text(
+                            'Whatsapp',
+                            style: TextStyle(
+                              fontSize: 16,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white,
+                            ),
+                          ),
+                        ],
                       ),
                     ),
                   ],
                 ),
+                // ------------------------------EMAIL-----------------------------
                 Stack(
                   alignment: Alignment.bottomCenter,
                   children: [
@@ -123,24 +142,41 @@ class ContactScreen extends StatelessWidget {
                       radius: 50,
                     ),
                     Container(
+                      width: MediaQuery.of(context).size.width * .30,
                       decoration: BoxDecoration(
-                        color: Colors.black45,
-                      ),
-                      child: Text(
-                        'Email',
-                        style: TextStyle(
-                          fontSize: 20,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.white,
-                        ),
+                          color: Colors.black87,
+                          borderRadius: BorderRadius.all(
+                            Radius.circular(40.0),
+                          )),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Text(
+                            'Email',
+                            style: TextStyle(
+                              fontSize: 16,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white,
+                            ),
+                          ),
+                        ],
                       ),
                     ),
                   ],
                 ),
+                // ------------------------------SITE-----------------------------
                 Stack(
                   alignment: Alignment.bottomCenter,
                   children: [
                     RaisedButton(
+                      padding: const EdgeInsets.all(8.0),
+                      elevation: 0.0,
+                      disabledElevation: 0.0,
+                      focusElevation: 0.0,
+                      highlightElevation: 0.0,
+                      hoverElevation: 0.0,
+                      color: colorScheme.primary,
                       onPressed: _launchSITE,
                       child: CircleAvatar(
                         backgroundImage: NetworkImage(
@@ -149,50 +185,91 @@ class ContactScreen extends StatelessWidget {
                       ),
                     ),
                     Container(
+                      width: MediaQuery.of(context).size.width * .30,
                       decoration: BoxDecoration(
-                        color: Colors.black45,
-                      ),
-                      child: Text(
-                        'Site',
-                        style: TextStyle(
-                          fontSize: 20,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.white,
-                        ),
+                          color: Colors.black87,
+                          borderRadius: BorderRadius.all(
+                            Radius.circular(40.0),
+                          )),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Text(
+                            'Site',
+                            style: TextStyle(
+                              fontSize: 16,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white,
+                            ),
+                          ),
+                        ],
                       ),
                     ),
                   ],
                 ),
               ],
             ),
+
             SizedBox(height: MediaQuery.of(context).padding.top),
+
+            // ------------------------------FACEBOOK-----------------------------
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                Stack(
-                  alignment: Alignment.bottomCenter,
-                  children: [
-                    CircleAvatar(
-                      backgroundImage: NetworkImage(
-                          'https://img1.pnghut.com/14/3/7/xArSPfqe0E/logo-internet-email-icon-design-whatsapp.jpg'),
-                      radius: 50,
-                    ),
-                    Container(
-                      decoration: BoxDecoration(
-                        color: Colors.black45,
+                RaisedButton(
+                  padding: const EdgeInsets.all(8.0),
+                  elevation: 0.0,
+                  disabledElevation: 0.0,
+                  focusElevation: 0.0,
+                  highlightElevation: 0.0,
+                  hoverElevation: 0.0,
+                  color: colorScheme.primary,
+                  onPressed: _launchFACE,
+                  child: Stack(
+                    alignment: Alignment.bottomCenter,
+                    children: [
+                      CircleAvatar(
+                        backgroundImage: NetworkImage(
+                            'https://img1.pnghut.com/14/3/7/xArSPfqe0E/logo-internet-email-icon-design-whatsapp.jpg'),
+                        radius: 50,
                       ),
-                      child: Text(
-                        'Facebook',
-                        style: TextStyle(
-                          fontSize: 20,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.white,
+                      Container(
+                        width: MediaQuery.of(context).size.width * .20,
+                        decoration: BoxDecoration(
+                            color: Colors.black87,
+                            borderRadius: BorderRadius.all(
+                              Radius.circular(40.0),
+                            )),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Text(
+                              'Facebook',
+                              style: TextStyle(
+                                fontSize: 16,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white,
+                              ),
+                            ),
+                          ],
                         ),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
+
+                // ------------------------------LIGAÇÃO-----------------------------
+
                 RaisedButton(
+                  padding: const EdgeInsets.all(8.0),
+                  elevation: 0.0,
+                  disabledElevation: 0.0,
+                  focusElevation: 0.0,
+                  highlightElevation: 0.0,
+                  hoverElevation: 0.0,
+                  color: colorScheme.primary,
                   onPressed: _calling,
                   child: Stack(
                     alignment: Alignment.bottomCenter,
@@ -203,40 +280,71 @@ class ContactScreen extends StatelessWidget {
                         radius: 50,
                       ),
                       Container(
+                        width: MediaQuery.of(context).size.width * .30,
                         decoration: BoxDecoration(
-                          color: Colors.black45,
-                        ),
-                        child: Text(
-                          'Ligação',
-                          style: TextStyle(
-                            fontSize: 20,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.white,
-                          ),
+                            color: Colors.black87,
+                            borderRadius: BorderRadius.all(
+                              Radius.circular(40.0),
+                            )),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Text(
+                              'Ligação',
+                              style: TextStyle(
+                                fontSize: 16,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white,
+                              ),
+                            ),
+                          ],
                         ),
                       ),
                     ],
                   ),
                 ),
+
+                // ------------------------------INSTAGRAM-----------------------------
+
                 Stack(
                   alignment: Alignment.bottomCenter,
                   children: [
-                    CircleAvatar(
-                      backgroundImage: NetworkImage(
-                          'https://cdn.icon-icons.com/icons2/1582/PNG/512/instagram_108043.png'),
-                      radius: 50,
+                    RaisedButton(
+                      padding: const EdgeInsets.all(8.0),
+                      elevation: 0.0,
+                      disabledElevation: 0.0,
+                      focusElevation: 0.0,
+                      highlightElevation: 0.0,
+                      hoverElevation: 0.0,
+                      color: colorScheme.primary,
+                      onPressed: _launchINSTA,
+                      child: CircleAvatar(
+                        backgroundImage: NetworkImage(
+                            'https://cdn.icon-icons.com/icons2/1582/PNG/512/instagram_108043.png'),
+                        radius: 50,
+                      ),
                     ),
                     Container(
+                      width: MediaQuery.of(context).size.width * .30,
                       decoration: BoxDecoration(
-                        color: Colors.black45,
-                      ),
-                      child: Text(
-                        'Instagram',
-                        style: TextStyle(
-                          fontSize: 20,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.white,
-                        ),
+                          color: Colors.black87,
+                          borderRadius: BorderRadius.all(
+                            Radius.circular(40.0),
+                          )),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Text(
+                            'Instagram',
+                            style: TextStyle(
+                              fontSize: 16,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white,
+                            ),
+                          ),
+                        ],
                       ),
                     ),
                   ],
@@ -329,8 +437,27 @@ class ContactScreen extends StatelessWidget {
     }
   }
 
+  _launchFACE() async {
+    const url = 'https://facebook.com';
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Não foi possível abrir $url';
+    }
+  }
+
   _calling() async {
-    const url = 'tel:+5584994470336';
+    const url = 'tel:+5584991961118';
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Não foi possível abrir $url';
+    }
+  }
+
+  _launchINSTA() async {
+    const url =
+        'https://instagram.com/beijodoprazeroficial?igshid=1upuc6kfwupsn';
     if (await canLaunch(url)) {
       await launch(url);
     } else {

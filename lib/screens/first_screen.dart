@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:lojavirtualudemy/screens/contact_screen.dart';
 import 'package:lojavirtualudemy/screens/home_screen.dart';
 import 'package:lojavirtualudemy/screens/list_test.dart';
-import 'package:lojavirtualudemy/screens/news_screen.dart';
 import 'package:lojavirtualudemy/screens/promotion_screen.dart';
 
 // void main() => runApp(MyApp());
